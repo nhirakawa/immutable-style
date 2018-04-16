@@ -8,6 +8,35 @@
   <artifactId>immutable-style</artifactId>
   <version>1.0</version>
 
+  <name>immutable-style</name>
+
+  <description>Nick Hirakawa's Immutables style</description>
+
+  <url>https://github.com/nhirakawa/immutable-style</url>
+
+  <scm>
+    <url>https://github.com/nhirakawa/immutable-style</url>
+    <connection>scm:git:git://github.com/nhirakawa/immutable-style.git</connection>
+    <developerConnection>scm:git:git@github.com/nhirakawa/immutable-style.git</developerConnection>
+  </scm>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <email>nickhirakawa@gmail.com</email>
+      <name>Nick Hirakawa</name>
+      <url>https://github.com/nhirakawa</url>
+      <id>nhirakawa</id>
+    </developer>
+  </developers>
+
   <dependencies>
     <dependency>
       <groupId>org.immutables</groupId>
@@ -82,6 +111,5 @@
       </plugin>
     </plugins>
   </build>
-
 
 </project>
