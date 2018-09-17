@@ -7,6 +7,10 @@
   <groupId>com.github.nhirakawa</groupId>
   <artifactId>immutable-style</artifactId>
   <version>1.0</version>
+  <properties>
+    <immutables.version>2.5.6</immutables.version>
+    <jackson.version>2.9.6</jackson.version>
+  </properties>
 
   <name>immutable-style</name>
 
@@ -39,9 +43,14 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
       <groupId>org.immutables</groupId>
       <artifactId>value</artifactId>
-      <version>2.5.6</version>
+      <version>${immutables.version}</version>
     </dependency>
   </dependencies>
 
@@ -66,7 +75,7 @@
         <configuration>
           <serverId>ossrh</serverId>
           <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-          <autoReleaseAfterClose>false</autoReleaseAfterClose>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
         </configuration>
       </plugin>
       <plugin>

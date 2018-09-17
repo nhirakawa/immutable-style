@@ -8,12 +8,15 @@ import java.lang.annotation.Target;
 import org.immutables.value.Value;
 import org.immutables.value.Value.Style.ImplementationVisibility;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
 @Target({ElementType.PACKAGE, ElementType.TYPE})
-@Retention(RetentionPolicy.CLASS) // Make it class retention for incremental compilation
+@Retention(RetentionPolicy.CLASS)
 @Value.Style(
-    get = {"is*", "get*"}, // Detect 'get' and 'is' prefixes in accessor methods
-    init = "set*", // Builder initialization methods will have 'set' prefix
-    typeImmutable = "*", // No prefix or suffix for generated immutable type
-    visibility = ImplementationVisibility.SAME // Generated class will be always public
+    get = {"is*", "get*"},
+    init = "set*",
+    typeImmutable = "*",
+    visibility = ImplementationVisibility.SAME
 )
+@JsonSerialize
 public @interface ImmutableStyle {}
