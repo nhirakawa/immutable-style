@@ -16,6 +16,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
     get = {"is*", "get*"},
     init = "set*",
     typeImmutable = "*",
+    typeAbstract = {"Abstract*", "*Model"},
     visibility = ImplementationVisibility.SAME
 )
 @JsonSerialize
