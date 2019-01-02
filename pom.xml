@@ -10,7 +10,7 @@
 
   <groupId>com.github.nhirakawa</groupId>
   <artifactId>immutable-style</artifactId>
-  <version>4.0-SNAPSHOT</version>
+  <version>4.0</version>
 
   <name>immutable-style</name>
 
@@ -70,7 +70,7 @@
     <connection>scm:git:ssh://git@github.com/nhirakawa/immutable-style.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/nhirakawa/immutable-style.git</developerConnection>
     <url>https://github.com/nhirakawa/immutable-style.git</url>
-    <tag>HEAD</tag>
+    <tag>immutable-style-4.0</tag>
   </scm>
 
   <distributionManagement>
