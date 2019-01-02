@@ -1,4 +1,4 @@
-package com.github.nhirakawa.immutable.style;
+package com.github.nhirakawa.immutable.style.guava;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -17,7 +17,6 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
     init = "set*",
     typeImmutable = "*",
     typeAbstract = {"Abstract*", "*Model"},
-    jdkOnly = true,
     visibility = ImplementationVisibility.SAME
 )
 @JsonSerialize
